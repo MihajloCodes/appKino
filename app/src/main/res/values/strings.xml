@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GrckiKino</string>
+    <string name="title_vreme">Vreme izvlacenja</string>
+    <string name="title_preostalo_vreme">Preostalo za uplatu</string>
+    <string name="main_title">GRCKI KINO (20/80)</string>
+    <string name="main_title_talon">Vreme izvlacenja: </string>
+    <string name="message_connection">Molim Vas proverite konekciju sa Internetom</string>
+    <string name="preostalo_vreme">Preostalo vreme za uplatu: %1$s</string>
+    <string name="vreme_izvlacenja">Vreme izvlacenja: %1$s | Kolo: %2$s</string>
+    <string name="broj_izabranih_loptica">"Broj izabranih loptica: %1$d"</string>
+    <string name="slucajni_odbir">Slucajni odbir</string>
+    <string name="izvlacenje_uzivo">Izvlacenje uzivo</string>
+</resources>
