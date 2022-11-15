@@ -113,7 +113,7 @@ class TalonActivity : BaseActivity(), TalonAdapter.OnTalonItemListener {
             adapter.clearItem(position)
             counter--
         } else {
-            if (counter < 8) {
+            if (counter < 15) {
                 if (!numbersRandom.contains(position)) {
                     numbersRandom.add(position)
                 }
@@ -162,6 +162,17 @@ class TalonActivity : BaseActivity(), TalonAdapter.OnTalonItemListener {
     private fun calculateKvota() {
         binding.apply {
             when (counter) {
+                0 -> {
+                    layoutKvota.horizontalScroll.fullScroll(HorizontalScrollView.FOCUS_LEFT)
+                    layoutKvota.one.setTextColor(resources.getColor(R.color.grey))
+                    layoutKvota.two.setTextColor(resources.getColor(R.color.grey))
+                    layoutKvota.three.setTextColor(resources.getColor(R.color.grey))
+                    layoutKvota.four.setTextColor(resources.getColor(R.color.grey))
+                    layoutKvota.five.setTextColor(resources.getColor(R.color.grey))
+                    layoutKvota.six.setTextColor(resources.getColor(R.color.grey))
+                    layoutKvota.seven.setTextColor(resources.getColor(R.color.grey))
+                    layoutKvota.eight.setTextColor(resources.getColor(R.color.grey))
+                }
                 1 -> {
                     layoutKvota.horizontalScroll.fullScroll(HorizontalScrollView.FOCUS_LEFT)
                     layoutKvota.one.setTextColor(resources.getColor(R.color.white))
@@ -255,7 +266,7 @@ class TalonActivity : BaseActivity(), TalonAdapter.OnTalonItemListener {
                     layoutKvota.five.setTextColor(resources.getColor(R.color.grey))
                     layoutKvota.six.setTextColor(resources.getColor(R.color.grey))
                     layoutKvota.seven.setTextColor(resources.getColor(R.color.grey))
-                    layoutKvota.eight.setTextColor(resources.getColor(R.color.grey))
+                    layoutKvota.eight.setTextColor(resources.getColor(R.color.white))
                 }
             }
         }
